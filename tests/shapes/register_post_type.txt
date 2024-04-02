@@ -29,7 +29,7 @@ bool|string $show_in_menu
 bool $show_in_nav_menus
 bool $show_in_rest
 bool $show_ui
-array $supports
+array|false $supports
 string[] $taxonomies
 array $template
 string|false $template_lock

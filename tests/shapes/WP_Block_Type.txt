@@ -1,7 +1,8 @@
+string[]|null $allowed_blocks
 string[]|null $ancestor
 string $api_version
 array|null $attributes
-array[] $block_hooks
+string[] $block_hooks
 string|null $category
 string $description
 string[] $editor_script_handles
@@ -20,5 +21,7 @@ array|null $supports
 string|null $textdomain
 string $title
 string[] $uses_context
+callable|null $variation_callback
 array[] $variations
 string[] $view_script_handles
+string[] $view_style_handles
