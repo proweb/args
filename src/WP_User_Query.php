@@ -202,7 +202,7 @@ class WP_User_Query extends Shared\Base implements MetaQuery\WithArgs {
 	 *
 	 * @var true|array<int,string>
 	 */
-	public true|array $has_published_posts;
+	public bool|array $has_published_posts;
 
 	/**
 	 * The user nicename.
