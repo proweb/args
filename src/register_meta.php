@@ -81,7 +81,7 @@ class register_meta extends Shared\Base {
 	 *     prepare_callback: callable(mixed,\WP_REST_Request,array<string,mixed>): mixed,
 	 * }
 	 */
-	public $show_in_rest;
+	public bool|array $show_in_rest;
 
 	/**
 	 * Whether to enable revisions support for this meta_key.
