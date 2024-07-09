@@ -40,6 +40,7 @@ composer generate -- --file=vendor/wordpress/wordpress/wp-includes/post.php --fu
 2. Run `composer test`
 3. Address any new, updated, or removed args in changed files in `tests/shapes`
 4. Re-run the tests until they all pass
+5. Add a corresponding entry to the `extra.args-shapes` property in composer.json
 
 ## Running the Tests
 
