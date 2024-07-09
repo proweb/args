@@ -16,7 +16,7 @@ This library provides well-documented classes which represent many of the associ
 
 ![](.github/assets/screenshot.png)
 
-## Current Status
+## Current status
 
 Last updated for WordPress 6.5.
 
@@ -54,7 +54,7 @@ $args->taxonomies = [ 'genre', 'audience' ];
 $story = register_post_type( 'story', $args->toArray() );
 ```
 
-## Meta Queries, Tax Queries, and Date Queries
+## Meta queries, tax queries, and date queries
 
 The query classes in WordPress support variously `meta_query`, `tax_query`, and `date_query` arguments. These are fully supported and you can construct them in a structured and strongly typed way.
 
@@ -123,7 +123,7 @@ $args->meta_query = $args->meta_query::fromArray( $array );
 $query = new \WP_Query( $args->toArray() );
 ```
 
-## What's Provided
+## What's provided
 
 ### Posts
 
@@ -135,7 +135,7 @@ $query = new \WP_Query( $args->toArray() );
 * `\Args\register_post_meta`
 * `\Args\register_post_status`
 
-### Taxonomies and Terms
+### Taxonomies and terms
 
 * `\Args\WP_Term_Query`
 * `\Args\register_taxonomy`
@@ -185,7 +185,7 @@ $query = new \WP_Query( $args->toArray() );
 * `\Args\WP_Customize_Section`
 * `\Args\WP_Customize_Setting`
 
-### Everything Else
+### Everything else
 
 * `\Args\paginate_links`
 * `\Args\register_meta`
@@ -196,7 +196,7 @@ $query = new \WP_Query( $args->toArray() );
 * `\Args\wp_dropdown_languages`
 * `\Args\wp_generate_tag_cloud`
 
-## Type Checking
+## Type checking
 
 Typed class properties are implemented in this library where possible. If you pass a value of the wrong type to an argument that is typed, you'll get a fatal error as long as you're using strict types:
 
@@ -209,7 +209,7 @@ No more mysterious bugs due to incorrect types.
 
 Note that several parameters in WordPress accept multiple types, for example the `$ignore_sticky_posts` argument for `\WP_Query` can be a boolean or an integer. In some of these cases I've opted to type the parameter with the most appropriate type even though it can technically accept other types.
 
-## Static Analysis
+## Static analysis
 
 PHPStan-specific `@phpstan-var` tags are used for properties that have a fixed set of values or other constraints. This allows for even greater type and value checking via static analysis with PHPStan.
 
@@ -219,7 +219,7 @@ Ensure you're using PHPStan 1.0 or higher to make the best use of these constrai
 
 Check out [CONTRIBUTING.md](CONTRIBUTING.md) for information about generating your own Args definitions or contributing to the Args library.
 
-## But Why?
+## But why?
 
 I have a name for these array-type parameters for passing arguments. I call them *Stockholm Parameters*. We've gotten so used to using them that we forget what a terrible design pattern it is. This library exists to work around the immediate issue without rearchitecting the whole of WordPress.
 
