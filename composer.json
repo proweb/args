@@ -115,7 +115,7 @@
 		"phpstan/phpstan-strict-rules": "^1.1",
 		"phpunit/phpunit": "^9.0",
 		"roots/wordpress-core-installer": "^1.0.0",
-		"roots/wordpress-full": "~6.5.0"
+		"roots/wordpress-full": "6.6-RC3"
 	},
 	"funding": [
 		{
