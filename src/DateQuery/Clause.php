@@ -152,7 +152,7 @@ final class Clause implements Arrayable, Values {
 	 * @var int|int[]
 	 * @phpstan-var int<1,23>|array<int, int<1,23>>
 	 */
-	public $hour;
+	public int|array $hour;
 
 	/**
 	 * The minute of the hour. Accepts numbers 0-59 or an array
@@ -163,7 +163,7 @@ final class Clause implements Arrayable, Values {
 	 * @var int|int[]
 	 * @phpstan-var int<0,59>|array<int, int<0,59>>
 	 */
-	public $minute;
+	public int|array $minute;
 
 	/**
 	 * The second of the minute. Accepts numbers 0-59 or an
@@ -174,6 +174,6 @@ final class Clause implements Arrayable, Values {
 	 * @var int|int[]
 	 * @phpstan-var int<0,59>|array<int, int<0,59>>
 	 */
-	public $second;
+	public int|array $second;
 
 }
