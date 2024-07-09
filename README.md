@@ -30,6 +30,14 @@ Last updated for WordPress 6.5.
 composer require johnbillion/args
 ```
 
+## Changes in version 2
+
+In Args version 2.0 and higher:
+
+* Many arguments have had their type strictness increased for added type safety.
+* The `Base` class which is implemented by all of the Args classes no longer implements `ArrayAccess`, `Countable`, or `IteratorAggregate`. [See this issue for further information](https://github.com/johnbillion/args/issues/40).
+* PHP 8.0+ is now required.
+
 ## Usage
 
 Usage with a class constructor:
