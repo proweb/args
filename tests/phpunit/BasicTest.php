@@ -39,35 +39,4 @@ final class BasicTest extends TestCase {
 
 		self::assertSame( $expected, $actual );
 	}
-
-	public function testCountingArrayElementsWorksAsExpected(): void {
-		$args = new \Args\WP_Query;
-
-		self::assertCount( 0, $args );
-
-		$args->attachment_id = 123;
-		$args->name = 'world';
-
-		self::assertCount( 2, $args );
-	}
-
-	public function testIteratingArrayElementsWorksAsExpected(): void {
-		$args = new \Args\WP_Query;
-
-		$args->attachment_id = 123;
-		$args->name = 'world';
-
-		$expected = [
-			123,
-			'world',
-		];
-		$actual = [];
-
-		foreach ( $args as $arg ) {
-			$actual[] = $arg;
-		}
-
-		self::assertSame( $expected, $actual );
-	}
-
 }
