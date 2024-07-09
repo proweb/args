@@ -12,7 +12,7 @@ $query = new WP_Query( [
 ] );
 ```
 
-This library provides well-documented classes which represent many of the associative array parameters used throughout WordPress. Using them at the point where you populate the arguments means you get autocompletion and intellisense in your code editor, and strict typing thanks to typed properties in PHP 7.4. Comprehensive types and constraints for [PHPStan](https://phpstan.org/) are also included.
+This library provides well-documented classes which represent many of the associative array parameters used throughout WordPress. Using them at the point where you populate the arguments means you get autocompletion and intellisense in your code editor, and strict typing thanks to typed properties. Comprehensive types and constraints for [PHPStan](https://phpstan.org/) are also included.
 
 ![](.github/assets/screenshot.png)
 
@@ -213,7 +213,7 @@ Note that several parameters in WordPress accept multiple types, for example the
 
 PHPStan-specific `@phpstan-var` tags are used for properties that have a fixed set of values or other constraints. This allows for even greater type and value checking via static analysis with PHPStan.
 
-Ensure you're using PHPStan 1.0 or higher to make the best use of these constraints.
+Ensure you're using a recent version of PHPStan to make the best use of these constraints.
 
 ## Contributing
 
