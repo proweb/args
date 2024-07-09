@@ -73,7 +73,8 @@ final class Clause implements Arrayable, Values {
 	 *
 	 * Default empty.
 	 *
-	 * @var int|int[]
+	 * @var int|array<int,int>
+	 * @phpstan-var int<1000,9999>|list<int<1000,9999>>
 	 */
 	public int|array $year;
 
@@ -83,8 +84,8 @@ final class Clause implements Arrayable, Values {
 	 *
 	 * Default empty.
 	 *
-	 * @var int|int[]
-	 * @phpstan-var int<1,12>|array<int, int<1,12>>
+	 * @var int|array<int,int>
+	 * @phpstan-var int<1,12>|list<int<1,12>>
 	 */
 	public int|array $month;
 
@@ -94,8 +95,8 @@ final class Clause implements Arrayable, Values {
 	 *
 	 * Default empty.
 	 *
-	 * @var int|int[]
-	 * @phpstan-var int<0,53>|array<int, int<0,53>>
+	 * @var int|array<int,int>
+	 * @phpstan-var int<0,53>|list<int<0,53>>
 	 */
 	public int|array $week;
 
@@ -105,8 +106,8 @@ final class Clause implements Arrayable, Values {
 	 *
 	 * Default empty.
 	 *
-	 * @var int|int[]
-	 * @phpstan-var int<1,366>|array<int, int<1,366>>
+	 * @var int|array<int,int>
+	 * @phpstan-var int<1,366>|list<int<1,366>>
 	 */
 	public int|array $dayofyear;
 
@@ -116,8 +117,8 @@ final class Clause implements Arrayable, Values {
 	 *
 	 * Default empty.
 	 *
-	 * @var int|int[]
-	 * @phpstan-var int<1,31>|array<int, int<1,31>>
+	 * @var int|array<int,int>
+	 * @phpstan-var int<1,31>|list<int<1,31>>
 	 */
 	public int|array $day;
 
@@ -127,8 +128,8 @@ final class Clause implements Arrayable, Values {
 	 *
 	 * Default empty.
 	 *
-	 * @var int|int[]
-	 * @phpstan-var int<1,7>|array<int, int<1,7>>
+	 * @var int|array<int,int>
+	 * @phpstan-var int<1,7>|list<int<1,7>>
 	 */
 	public int|array $dayofweek;
 
@@ -138,8 +139,8 @@ final class Clause implements Arrayable, Values {
 	 *
 	 * Default empty.
 	 *
-	 * @var int|int[]
-	 * @phpstan-var int<1,7>|array<int, int<1,7>>
+	 * @var int|array<int,int>
+	 * @phpstan-var int<1,7>|list<int<1,7>>
 	 */
 	public int|array $dayofweek_iso;
 
@@ -149,8 +150,8 @@ final class Clause implements Arrayable, Values {
 	 *
 	 * Default empty.
 	 *
-	 * @var int|int[]
-	 * @phpstan-var int<1,23>|array<int, int<1,23>>
+	 * @var int|array<int,int>
+	 * @phpstan-var int<1,23>|list<int<1,23>>
 	 */
 	public int|array $hour;
 
@@ -160,8 +161,8 @@ final class Clause implements Arrayable, Values {
 	 *
 	 * Default empty.
 	 *
-	 * @var int|int[]
-	 * @phpstan-var int<0,59>|array<int, int<0,59>>
+	 * @var int|array<int,int>
+	 * @phpstan-var int<0,59>|list<int<0,59>>
 	 */
 	public int|array $minute;
 
@@ -171,8 +172,8 @@ final class Clause implements Arrayable, Values {
 	 *
 	 * Default empty.
 	 *
-	 * @var int|int[]
-	 * @phpstan-var int<0,59>|array<int, int<0,59>>
+	 * @var int|array<int,int>
+	 * @phpstan-var int<0,59>|list<int<0,59>>
 	 */
 	public int|array $second;
 
